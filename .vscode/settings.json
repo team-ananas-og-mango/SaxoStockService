@@ -1,0 +1,39 @@
+{
+  "[python]": {
+    "editor.defaultFormatter": null
+  },
+  "editor.formatOnSaveMode": "file",
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": true
+  },
+  "python.sortImports.args": [
+    "--line-length=120",
+    "--use-parentheses",
+    "--trailing-comma",
+    "--multi-line=3",
+    "--src=${workspaceFolder}"
+  ],
+  "python.linting.pylintEnabled": true,
+  "python.linting.mypyEnabled": false,
+  "python.linting.enabled": true,
+  "python.linting.pylintArgs": [
+    "--max-line-length=120"
+  ],
+  "python.linting.flake8Args": [
+    "--max-line-length=120"
+  ],
+  "python.formatting.provider": "black",
+  "python.formatting.blackArgs": [
+    "-l 120"
+  ],
+  "python.analysis.extraPaths": [
+    "./saxo_stock_service"
+  ],
+  "python.testing.pytestArgs": [
+    "./saxo_stock_service"
+  ],
+  "python.testing.unittestEnabled": false,
+  "python.testing.pytestEnabled": true,
+  "python.analysis.autoImportCompletions": true
+}
